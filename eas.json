@@ -1,0 +1,33 @@
+{
+  "cli": {
+    "version": ">= 16.1.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "preview": {
+      "android": {
+        "buildType": "apk",
+        "env": {
+          "EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY": "pk_test_dG9nZXRoZXItZmF3bi01NC5jbGVyay5hY2NvdW50cy5kZXYk",
+          "CONVEX_DEPLOYMENT": "dev:agile-raven-173",
+          "EXPO_PUBLIC_CONVEX_URL": "https://agile-raven-173.convex.cloud"
+        }
+      }
+    },
+    "preview2": {
+      "android": {
+        "gradleCommand": ":app:assembleRelease"
+      }
+    },
+    "preview3": {
+      "developmentClient": true
+    },
+    "preview4": {
+      "distribution": "internal"
+    },
+    "production": {}
+  },
+  "submit": {
+    "production": {}
+  }
+}

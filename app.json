@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "spotlight-app",
-    "slug": "spotlight-app",
+    "slug": "spotlight-clone",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -15,7 +15,9 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.xlyh.spotlightclone",
+      "fonts": ["./assets/fonts/JetBrainsMono-Medium.ttf"]
     },
     "web": {
       "bundler": "metro",
@@ -36,6 +38,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "944aa13e-0f65-4e4d-91f9-0c7971d0b613"
+      }
+    },
+    "owner": "xlyh"
   }
 }
